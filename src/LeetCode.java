@@ -18,8 +18,18 @@ public class LeetCode {
         numberString = "";
         numberString += Integer.toString(number);
 
+        // returned array with new length
+        int[] newDigits = new int[numberString.length()];
 
-        System.out.println(numberString);
+        for (int x = 0; x < numberString.length(); x++){
+            newDigits[x] = numberString.charAt(x);
+            System.out.println(newDigits[x]);
+        }
+
+//        for (int i = 0; i < newDigits.length; i++){
+//            System.out.println(newDigits[i]);
+//        }
+        //System.out.println(newDigits);
     }
 
     // 66. Plus One
