@@ -11,22 +11,15 @@ public class LeetCode {
         lc.plusOne(digits); */
 
         // 961. N-Repeated Element in Size 2N Array
-        // Approach: Divide index by one, if it is not the element - 1
-        // Approach: return that number
-        int[] nums = {1,2,3,3};
-
-        for (int x = 0; x < nums.length; x++){
-            int idxPlusOne = x + 1;
-            if (nums[x] != idxPlusOne){
-                System.out.println(nums[x]);
-                break;
-            }
-        }
+        // Dictionary where key is num and value is occurrence
+        int[] nums = {5,1,5,2,5,3,5,4};
+        System.out.println(lc.repeatedNTimes(nums));
 
     }
 
     // 961. N-Repeated Element in Size 2N Array
     public int repeatedNTimes(int[] nums) {
+
         return 0;
     }
 
