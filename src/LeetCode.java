@@ -13,14 +13,16 @@ public class LeetCode {
 
         // 961. N-Repeated Element in Size 2N Array
         // Dictionary where key is num and value is occurrence
-        int[] nums = {5,1,5,2,5,3,5,4};
-        lc.repeatedNTimes(nums);
+        int[] nums = {8,3,2,3};
+        System.out.println(lc.repeatedNTimes(nums));
 
     }
 
     // 961. N-Repeated Element in Size 2N Array
     public int repeatedNTimes(int[] nums)
     {
+        int max = 0;
+
         HashMap <Integer, Integer> occur = new HashMap<>();
         for (int x = 0; x < nums.length; x++)
         {
@@ -37,9 +39,13 @@ public class LeetCode {
 
         for (Integer i : occur.keySet())
         {
-            System.out.println("Key: "+ i +" Value: "+ occur.get(i));
+            System.out.println("Key: "+ i +" Value: "+occur.get(i));
+            if (occur.get(i) > max){
+                max = i;
+            }
         }
-        return 0;
+
+        return max;
     }
 
     // 66. Plus One
