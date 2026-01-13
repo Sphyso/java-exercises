@@ -1,4 +1,5 @@
 import  java.math.BigInteger;
+import java.util.Collections;
 import java.util.HashMap;
 
 public class LeetCode {
@@ -13,7 +14,7 @@ public class LeetCode {
 
         // 961. N-Repeated Element in Size 2N Array
         // Dictionary where key is num and value is occurrence
-        int[] nums = {8,3,2,3};
+        int[] nums = {1,8,3,8};
         System.out.println(lc.repeatedNTimes(nums));
 
     }
@@ -21,8 +22,6 @@ public class LeetCode {
     // 961. N-Repeated Element in Size 2N Array
     public int repeatedNTimes(int[] nums)
     {
-        int max = 0;
-
         HashMap <Integer, Integer> occur = new HashMap<>();
         for (int x = 0; x < nums.length; x++)
         {
@@ -37,10 +36,13 @@ public class LeetCode {
             }
         }
 
+        int maxValue = Collections.max(occur.values());
+        int max = 0;
+
         for (Integer i : occur.keySet())
         {
-            System.out.println("Key: "+ i +" Value: "+occur.get(i));
-            if (occur.get(i) > max){
+            if (occur.get(i) == maxValue)
+            {
                 max = i;
             }
         }
