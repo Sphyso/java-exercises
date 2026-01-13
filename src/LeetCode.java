@@ -13,10 +13,20 @@ public class LeetCode {
         lc.plusOne(digits); */
 
         // 961. N-Repeated Element in Size 2N Array
-        // Dictionary where key is num and value is occurrence
+        /*
+        Dictionary where key is num and value is occurrence
         int[] nums = {1,8,3,8};
-        System.out.println(lc.repeatedNTimes(nums));
+        System.out.println(lc.repeatedNTimes(nums)); */
 
+        // 1390. Four Divisors
+        //Approach eliminate all non possible values first.
+
+    }
+
+
+    // 1390. Four Divisors
+    public int sumFourDivisors(int[] nums) {
+        return 0;
     }
 
     // 961. N-Repeated Element in Size 2N Array
