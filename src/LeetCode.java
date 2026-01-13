@@ -2,12 +2,23 @@ import  java.math.BigInteger;
 
 public class LeetCode {
     public static void main(String[] args) {
-        // used to convert to a string
-        int[] digits = {9,8,7,6,5,4,3,2,1,0};
-
         LeetCode lc = new LeetCode();
-        lc.plusOne(digits);
 
+        // 66. Plus One
+        /*
+        used to convert to a string
+        int[] digits = {9,8,7,6,5,4,3,2,1,0};
+        lc.plusOne(digits); */
+
+        // 961. N-Repeated Element in Size 2N Array
+
+
+
+    }
+
+    // 961. N-Repeated Element in Size 2N Array
+    public int repeatedNTimes(int[] nums) {
+        return 0;
     }
 
     // 66. Plus One
