@@ -19,7 +19,17 @@ public class LeetCode {
         System.out.println(lc.repeatedNTimes(nums)); */
 
         // 1390. Four Divisors
-        //Approach eliminate all non possible values first.
+        //Approach eliminate all non-possible values first.
+        int[] nums = {21,4,7};
+
+        int[] primeNumbers = {2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89, 97, 101};
+        for (int x = 0; x < nums.length; x++)
+        {
+            if (nums[x] < 6)
+            {
+                continue;
+            }
+        }
 
     }
 
