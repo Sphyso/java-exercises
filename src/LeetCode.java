@@ -11,8 +11,17 @@ public class LeetCode {
         lc.plusOne(digits); */
 
         // 961. N-Repeated Element in Size 2N Array
+        // Approach: Divide index by one, if it is not the element - 1
+        // Approach: return that number
+        int[] nums = {1,2,3,3};
 
-
+        for (int x = 0; x < nums.length; x++){
+            int idxPlusOne = x + 1;
+            if (nums[x] != idxPlusOne){
+                System.out.println(nums[x]);
+                break;
+            }
+        }
 
     }
 
